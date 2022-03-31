@@ -10,12 +10,42 @@
 
 	<!-- Our CSS -->
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <h1>Vacation Destinations Wish List</h1>
+        <p>Found exciting places to visit on your next vacation? Use the form below to add them to your wish list.</p>
+        
+    </header>
+    <main>
+        <form id="destination_details_form">
+            <label for="name">Destination Name</label>
+            <input type="text" id="name" placeholder="Provide a name for the destination" required>
+
+            <label for="location">Destination Location</label>
+            <input type="text" id="location" placeholder="Provide a location for the destination" required>
+
+            <label for="photo">Photo</label>
+            <input type="url" id="photo" placeholder="Provide a URL for the photo of the destination">
+
+            <label for="description">Destination Description</label>
+            <textarea id="description" placeholder="Provide a description for the destination"></textarea>
+            <button type="submit">Add to List</button>
+        </form>
+        <article>
+            <h2 id="title">Enter Destination Details</h2>
+            <div id="destinations_container">
+                <!-- Things provided by JS -->
+            </div>
+        </article>
+    </main>
+
+    
 
     <!-- Our JavaScript -->
-    <script src="script.js"></script>
+    
 </body>
 
 </html>
